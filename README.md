@@ -1,67 +1,74 @@
 # tomasa3D
 
-**tomasa3D** es un proyecto de visualización 3D creado con Angular y Three.js, que utiliza un modelo 3D de **Tomasa**, la gata del autor. Este proyecto demuestra cómo integrar y desplegar aplicaciones Angular con modelos 3D en GitHub Pages.
+**tomasa3D** is a 3D visualization project built with Angular and Three.js, featuring a 3D model of **Tomasa**, the author's cat. This project showcases how to integrate and deploy Angular applications with 3D models using GitHub Pages.
 
-## Descripción del Proyecto
+## Project Overview
 
-Este proyecto muestra cómo cargar y visualizar un modelo 3D utilizando Three.js en una aplicación Angular. El modelo utilizado en esta demostración es un `.gltf` de Tomasa, la gata del autor, lo que añade un toque personal al proyecto. La aplicación permite al usuario interactuar con el modelo, rotándolo en diferentes ejes.
+This application demonstrates how to load and render a 3D model using Three.js in an Angular project. The showcased ```.gltf``` model represents Tomasa, adding a personal touch to the project. Users can interact with the model by rotating it along different axes.
 
-## Características
+## Features
 
-- **Cargar y Renderizar Modelos 3D**: Utiliza Three.js para cargar y renderizar un modelo `.gltf` o `.glb` en la aplicación Angular.
-- **Interactividad con el Mouse**: Permite rotar el modelo 3D utilizando el mouse mediante el uso de `OrbitControls`.
-- **Optimización del Modelo**: El modelo de Tomasa ha sido optimizado para reducir los tiempos de carga.
-- **Despliegue en GitHub Pages**: La aplicación está desplegada en GitHub Pages y accesible públicamente.
+- **3D Model Loading and Rendering**: Uses Three.js to load and render ```.gltf``` or ```.glb``` models.
+- **Mouse / Touch Interaction**: Rotate the 3D model using ```OrbitControls```.
+- **Optimized Model**: The Tomasa model is optimized for fast loading.
+- **GitHub Pages Deployment**:  Easily accessible via GitHub Pages.
 
-## Estructura del Proyecto
+## Project Structure
 
-- **src/app**: Contiene los componentes principales de la aplicación.
-  - **tomasa**: Componente que maneja la carga y renderizado del modelo 3D.
-- **src/assets/models**: Contiene el modelo 3D de Tomasa junto con sus texturas y archivos relacionados.
-- **src/environments**: Configuraciones de entorno para desarrollo y producción.
-- **public**: (Si se utiliza) Contiene archivos estáticos adicionales.
+- **src/app**: Main components of the Angular application.
+  - **tomasa**: Component responsible for loading and rendering the 3D model.
+- **src/assets/models**: Directory for the 3D model and its related files (textures, etc.).
+- **src/environments**: nvironment configurations for development and production.
+- **public**: (Optional) Additional static assets.
 
-## Tecnologías Utilizadas
+## Technologies Used
 
-- **Angular**: Framework de desarrollo frontend utilizado para construir la aplicación.
-- **Three.js**: Biblioteca utilizada para manejar gráficos 3D en la web.
-- **GLTFLoader**: Utilizado para cargar el modelo 3D en formato `.gltf` o `.glb`.
-- **OrbitControls**: Permite la interacción con el modelo 3D utilizando el mouse.
-- **GitHub Pages**: Plataforma utilizada para desplegar y hospedar la aplicación.
+- **Angular**: Frontend framework used for building the application.
+- **Three.js**: JavaScript library for 3D rendering and animation.
+- **GLTFLoader**: For loading ```.gltf``` and ```.glb``` 3D models.
+- **OrbitControls**: Enables mouse interaction with the 3D model.
+- **GitHub Pages**: Hosting platform for the application.
 
-## Requisitos
+## Requirements
 
-Para ejecutar este proyecto localmente, necesitarás:
+To run the project locally, ensure you have:
 
-- Node.js y npm instalados.
-- Angular CLI (`npm install -g @angular/cli`).
+   - Node.js and npm installed.
+   - Angular CLI ```(npm install -g @angular/cli)```.
 
-## Instalación
+## Installation
 
-1. Clona el repositorio en tu máquina local:
+1. Clone the repository:
 ```
-   git clone https://github.com/srodzav/tomasa3D.git
+git clone https://github.com/srodzav/tomasa3D.git
 ```
-2. Navega al directorio del proyecto:
+
+2. Navigate to the project directory:
 ```
-   cd tomasa3D
+cd tomasa3D
 ```
-3. Instala las dependencias:
+
+3. Install dependencies:
 ```
 npm install
 ```
-4. Inicia la aplicación en modo desarrollo:
+
+4. Start the development server:
 ```
 ng serve
 ```
 
-Luego, abre tu navegador y ve a http://localhost:4200/.
+Open your browser at http://localhost:4200/.
 
-# Créditos
+## Author
 
-Este proyecto fue desarrollado por Sebastián Rodríguez. El modelo 3D utilizado en la aplicación es de Tomasa, la gata del autor.
+**Sebastián Rodríguez**
+- [LinkedIn](https://www.linkedin.com/in/sebastian-rodriguez-zavala/)
+- [Web](https://sebastianrdz.com)
+- [Email](mailto:contact@sebastianrdz.com)
+
+---
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
-
+This project is for personal use and is not licensed for commercial distribution.
