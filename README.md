@@ -1,27 +1,74 @@
-# Tomasa3D
+# tomasa3D
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.6.
+**tomasa3D** is a 3D visualization project built with Angular and Three.js, featuring a 3D model of **Tomasa**, the author's cat. This project showcases how to integrate and deploy Angular applications with 3D models using GitHub Pages.
 
-## Development server
+## Project Overview
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This application demonstrates how to load and render a 3D model using Three.js in an Angular project. The showcased ```.gltf``` model represents Tomasa, adding a personal touch to the project. Users can interact with the model by rotating it along different axes.
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **3D Model Loading and Rendering**: Uses Three.js to load and render ```.gltf``` or ```.glb``` models.
+- **Mouse / Touch Interaction**: Rotate the 3D model using ```OrbitControls```.
+- **Optimized Model**: The Tomasa model is optimized for fast loading.
+- **GitHub Pages Deployment**:  Easily accessible via GitHub Pages.
 
-## Build
+## Project Structure
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **src/app**: Main components of the Angular application.
+  - **tomasa**: Component responsible for loading and rendering the 3D model.
+- **src/assets/models**: Directory for the 3D model and its related files (textures, etc.).
+- **src/environments**: nvironment configurations for development and production.
+- **public**: (Optional) Additional static assets.
 
-## Running unit tests
+## Technologies Used
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Angular**: Frontend framework used for building the application.
+- **Three.js**: JavaScript library for 3D rendering and animation.
+- **GLTFLoader**: For loading ```.gltf``` and ```.glb``` 3D models.
+- **OrbitControls**: Enables mouse interaction with the 3D model.
+- **GitHub Pages**: Hosting platform for the application.
 
-## Running end-to-end tests
+## Requirements
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+To run the project locally, ensure you have:
 
-## Further help
+   - Node.js and npm installed.
+   - Angular CLI ```(npm install -g @angular/cli)```.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Installation
+
+1. Clone the repository:
+```
+git clone https://github.com/srodzav/tomasa3D.git
+```
+
+2. Navigate to the project directory:
+```
+cd tomasa3D
+```
+
+3. Install dependencies:
+```
+npm install
+```
+
+4. Start the development server:
+```
+ng serve
+```
+
+Open your browser at http://localhost:4200/.
+
+## Author
+
+**Sebastián Rodríguez**
+- [LinkedIn](https://www.linkedin.com/in/sebastian-rodriguez-zavala/)
+- [Web](https://sebastianrdz.com)
+- [Email](mailto:contact@sebastianrdz.com)
+
+---
+
+## License
+
+This project is for personal use and is not licensed for commercial distribution.
