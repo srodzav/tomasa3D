@@ -43,8 +43,8 @@ export class TomasaComponent implements OnInit {
 
     // Establecer el fondo de la escena a blanco
     this.scene = new THREE.Scene();
-    // this.scene.background = new THREE.Color(0xE3DAC9);
-    this.scene.background = new THREE.Color(0xFFFFFF); // Fondo blanco
+    this.scene.background = new THREE.Color(0xE3DAC9);
+    // this.scene.background = new THREE.Color(0xFFFFFF); // Fondo blanco
      // Fondo blanco
 
     this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 3000);
