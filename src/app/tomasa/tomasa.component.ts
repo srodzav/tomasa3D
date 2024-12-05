@@ -26,16 +26,26 @@ export class TomasaComponent implements OnInit {
     if (isPlatformBrowser(this.platformId)) {
       this.initScene();
       this.animate();
+      window.addEventListener('resize', this.onWindowResize.bind(this));
     }
+  }
+
+  private onWindowResize(): void {
+    this.camera.aspect = window.innerWidth / window.innerHeight;
+    this.camera.updateProjectionMatrix();
+    this.renderer.setSize(window.innerWidth, window.innerHeight);
   }
 
   private initScene(): void {
     this.renderer = new THREE.WebGLRenderer({ canvas: this.canvasRef.nativeElement });
+    this.renderer.setPixelRatio(window.devicePixelRatio);
     this.renderer.setSize(window.innerWidth, window.innerHeight);
 
     // Establecer el fondo de la escena a blanco
     this.scene = new THREE.Scene();
-    this.scene.background = new THREE.Color(0xE3DAC9); // Fondo blanco
+    // this.scene.background = new THREE.Color(0xE3DAC9);
+    this.scene.background = new THREE.Color(0xFFFFFF); // Fondo blanco
+     // Fondo blanco
 
     this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 3000);
     this.camera.position.z = 1300; // Ajusta la distancia de la cámara
@@ -82,10 +92,10 @@ export class TomasaComponent implements OnInit {
     requestAnimationFrame(() => this.animate());
 
     this.controls.update();
-    // if (this.model) {
-    //   // this.model.rotation.x += 0.01; // Rotación simple del modelo
-    //   this.model.rotation.y += 0.02; // Rotación simple del modelo
-    // }
+    if (this.model) {
+      // this.model.rotation.x += 0.01; // Rotación simple del modelo
+      this.model.rotation.y += 0.01; // Rotación simple del modelo
+    }
 
     this.renderer.render(this.scene, this.camera);
   }

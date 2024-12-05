@@ -1,5 +1,8 @@
 canvas {
-    display: block;
-    width: 100%;
-    height: 100vh;
+    margin: 0; /* Elimina márgenes */
+    padding: 0; /* Elimina rellenos */
+    border: none; /* Elimina bordes */
+    display: block; /* Asegura que el canvas no agregue espacios adicionales */
+    width: 100vw; /* Asegura que ocupe el ancho de la ventana */
+    height: 100vh; /* Asegura que ocupe el alto de la ventana */
 }
